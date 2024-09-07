@@ -1,0 +1,105 @@
+{
+  "type": "custommachinery:custom_machine",
+  "machine": "astralgenerators:steam_generator",
+  "time": 10,
+  "requirements": [
+    {
+      "type": "custommachinery:fluid",
+      "fluid": "astralgenerators:steam",
+      "amount": 84000,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:energy",
+      "amount": 10000,
+      "mode": "output"
+    },{
+      "type": "custommachinery:structure",
+      "keys": {
+        "a": "techreborn:basic_machine_frame",
+        "b": "astralgenerators:structural_glass",
+        "c": "astralgenerators:exhaust_vent"
+      },
+      "pattern": [
+        [
+          "aaaaaaa",
+          "aaaaaaa",
+          "aaaaaaa",
+          "aaaaaaa",
+          "aaaaaaa",
+          "aaaaaaa",
+          "aaamaaa"
+        ],
+        [
+          "abbbbba",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "abbbbba"
+        ],
+        [
+          "abbbbba",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "abbbbba"
+        ],
+        [
+          "abbbbba",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "abbbbba"
+        ],
+        [
+          "abbbbba",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "abbbbba"
+        ],  [
+          "abbbbba",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "abbbbba"
+        ],  [
+          "abbbbba",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "abbbbba"
+        ],  [
+          "abbbbba",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "b     b",
+          "abbbbba"
+        ],
+        [
+          "aaaaaaa",
+          "accccca",
+          "accccca",
+          "accccca",
+          "accccca",
+          "accccca",
+          "aaaaaaa"
+        ]
+      ]
+    }
+  ]
+}

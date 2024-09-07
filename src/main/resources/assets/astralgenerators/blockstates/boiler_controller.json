@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "astralgenerators:block/boiler_controller" },
+    "facing=south": { "model": "astralgenerators:block/boiler_controller", "y": 180 },
+    "facing=west":  { "model": "astralgenerators:block/boiler_controller", "y": 270 },
+    "facing=east":  { "model": "astralgenerators:block/boiler_controller", "y": 90 }
+  }
+}

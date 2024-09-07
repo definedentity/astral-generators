@@ -1,0 +1,89 @@
+{
+  "origin": {
+    "x": -2,
+    "y": 0,
+    "z": 2
+  },
+  "keys": {
+    "a": {
+      "block": "techreborn:basic_machine_frame"
+    },
+    "b": {
+      "block": "astralgenerators:superconducting_coil"
+    },
+    "c": {
+      "block": "techreborn:advanced_machine_casing"
+    },
+    "d": {
+      "block": "minecraft:sea_lantern"
+    },
+    "m": {
+      "block": "minecraft:redstone_block"
+    }
+  },
+  "pattern": [
+    [
+      "aaaaa",
+      "aaaaa",
+      "aaaaa",
+      "aaaaa",
+      "aamaa"
+    ],
+    [
+      "aaaaa",
+      "abbba",
+      "abbba",
+      "abbba",
+      "aaaaa"
+    ],
+    [
+      "     ",
+      " ccc ",
+      " ccc ",
+      " ccc ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "  c  ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "  d  ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "  c  ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      " ccc ",
+      " ccc ",
+      " ccc ",
+      "     "
+    ],
+    [
+      "     ",
+      " bbb ",
+      " bbb ",
+      " bbb ",
+      "     "
+    ],
+    [
+      "aaaaa",
+      "aaaaa",
+      "aaaaa",
+      "aaaaa",
+      "aaaaa"
+    ]
+  ]
+}

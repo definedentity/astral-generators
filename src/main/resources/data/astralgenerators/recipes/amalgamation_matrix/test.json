@@ -1,0 +1,81 @@
+{
+  "type": "custommachinery:custom_machine",
+  "machine": "astralgenerators:amalgamation_matrix",
+  "time": 10,
+  "requirements": [
+    {
+      "type": "custommachinery:structure",
+      "keys": {
+        "a": "techreborn:basic_machine_frame",
+        "b": "astralgenerators:superconducting_coil",
+        "c": "techreborn:advanced_machine_casing",
+        "d": "astralgenerators:astral_pylon"
+      },
+      "pattern": [
+        [
+          "aaaaa",
+          "aaaaa",
+          "aaaaa",
+          "aaaaa",
+          "aamaa"
+        ],
+        [
+          "aaaaa",
+          "abbba",
+          "abbba",
+          "abbba",
+          "aaaaa"
+        ],
+        [
+          "     ",
+          " ccc ",
+          " ccc ",
+          " ccc ",
+          "     "
+        ],
+        [
+          "     ",
+          "     ",
+          "  c  ",
+          "     ",
+          "     "
+        ],
+        [
+          "     ",
+          "     ",
+          "  d  ",
+          "     ",
+          "     "
+        ],
+        [
+          "     ",
+          "     ",
+          "  c  ",
+          "     ",
+          "     "
+        ],
+        [
+          "     ",
+          " ccc ",
+          " ccc ",
+          " ccc ",
+          "     "
+        ],
+        [
+          "     ",
+          " bbb ",
+          " bbb ",
+          " bbb ",
+          "     "
+        ],
+        [
+          "aaaaa",
+          "aaaaa",
+          "aaaaa",
+          "aaaaa",
+          "aaaaa"
+        ]
+      ]
+    }
+  ]
+}
