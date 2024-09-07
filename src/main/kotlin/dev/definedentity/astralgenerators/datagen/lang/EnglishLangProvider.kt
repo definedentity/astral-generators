@@ -71,10 +71,10 @@ class EnglishLangProvider(fabricDataGenerator: FabricDataGenerator) :
         tooltips[Vent.ID] = Vent.TOOLTIP_CONTENT
         tooltips[ExhaustVent.ID] = ExhaustVent.TOOLTIP_CONTENT
         tooltips[StainlessSteelCasing.ID] = StainlessSteelCasing.TOOLTIP_CONTENT
-        tooltips[DeuteriumBucket.ID] = DeuteriumBucket.DESCRIPTION
-        tooltips[Helium3Bucket.ID] = Helium3Bucket.DESCRIPTION
-        tooltips[TritiumBucket.ID] = TritiumBucket.DESCRIPTION
-        tooltips[SteamBucket.ID] = SteamBucket.DESCRIPTION
+        tooltips[DeuteriumBucket.ID] = DeuteriumBucket.TOOLTIP_CONTENT
+        tooltips[Helium3Bucket.ID] = Helium3Bucket.TOOLTIP_CONTENT
+        tooltips[TritiumBucket.ID] = TritiumBucket.TOOLTIP_CONTENT
+        tooltips[SteamBucket.ID] = SteamBucket.TOOLTIP_CONTENT
         tooltips[MultiBlockProjector.ID] = MultiBlockProjector.TOOLTIP_CONTENT
 
         tooltips.forEach { (k, v) -> translationBuilder.add("tooltip.${k}", v) }

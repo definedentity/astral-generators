@@ -13,7 +13,7 @@ class TritiumBucket() : AGBucketItem(FluidRegistry.TRITIUM_SOURCE!!, Tritium.COL
     companion object {
         val ID = "tritium_bucket"
         val NAME = "Tritium Bucket"
-        val DESCRIPTION = Tritium.DESCRIPTION
+        val TOOLTIP_CONTENT = Tritium.DESCRIPTION
     }
 
     override fun appendHoverText(

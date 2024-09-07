@@ -13,7 +13,7 @@ class DeuteriumBucket() : AGBucketItem(FluidRegistry.DEUTERIUM_SOURCE!!, Deuteri
     companion object {
         val ID = "deuterium_bucket"
         val NAME = "Deuterium Bucket"
-        val DESCRIPTION = Deuterium.DESCRIPTION
+        val TOOLTIP_CONTENT = Deuterium.DESCRIPTION
     }
 
     override fun appendHoverText(

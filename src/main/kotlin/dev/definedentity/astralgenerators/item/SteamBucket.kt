@@ -18,7 +18,7 @@ class SteamBucket : AGUpsideDownBucketItem(Steam.Source, Steam.COLOR) {
     companion object {
         val ID = "steam_bucket"
         val NAME = "Steam Bucket"
-        val DESCRIPTION = Steam.DESCRIPTION
+        val TOOLTIP_CONTENT = Steam.DESCRIPTION
     }
 
     override fun appendHoverText(

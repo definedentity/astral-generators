@@ -13,7 +13,7 @@ class Helium3Bucket() : AGBucketItem(FluidRegistry.HELIUM3_SOURCE!!, Helium3.COL
     companion object {
         val ID = "helium3_bucket"
         val NAME = "Helium3 Bucket"
-        val DESCRIPTION = Helium3.DESCRIPTION
+        val TOOLTIP_CONTENT = Helium3.DESCRIPTION
     }
 
     override fun appendHoverText(
