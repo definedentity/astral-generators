@@ -3,6 +3,8 @@ package dev.definedentity.astralgenerators.registry
 import dev.definedentity.astralgenerators.AstralGenerators
 import dev.definedentity.astralgenerators.block.*
 import dev.definedentity.astralgenerators.block.EngineIntakeCasing
+import dev.definedentity.astralgenerators.block.machines.FluidBoiler
+import dev.definedentity.astralgenerators.block.machines.SolidBoiler
 import dev.definedentity.astralgenerators.block.machines.SteamTurbine
 import dev.definedentity.astralgenerators.block.multiblock_projector.MultiBlockProjector
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
@@ -26,8 +28,9 @@ class BlockRegistry {
         val STAINLESS_STEEL_CASING = register("stainless_steel_casing", StainlessSteelCasing())
 
         val MULTIBLOK_PROJECTOR = register("multiblock_projector", MultiBlockProjector())
-
         val STEAM_TURBINE = register(SteamTurbine.ID, SteamTurbine())
+        val SOLID_BOILER = register(SolidBoiler.ID, SolidBoiler())
+        val FLUID_BOILER = register(FluidBoiler.ID, FluidBoiler())
 
         private fun register(name: String, block: Block): Block {
             registerBlockItem(name, block)

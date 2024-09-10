@@ -1,7 +1,7 @@
 {
   "name": "Solid Boiler Controller",
   "appearance": {
-    "block": "astralgenerators:boiler_controller",
+    "block": "astralgenerators:solid_boiler",
     "running": {
       "lightlevel": 15
     }

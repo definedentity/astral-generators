@@ -2,7 +2,7 @@
   "parent": "minecraft:block/orientable",
   "textures": {
     "top": "techreborn:block/machines/tier1_machines/machine_top",
-    "front": "techreborn:block/machines/tier1_machines/electric_alloy_smelter_front_off",
+    "front": "astralgenerators:block/solid_boiler",
     "side": "techreborn:block/machines/tier1_machines/machine_side"
   }
 }

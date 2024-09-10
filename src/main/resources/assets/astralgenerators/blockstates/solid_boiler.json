@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "astralgenerators:block/solid_boiler" },
+    "facing=south": { "model": "astralgenerators:block/solid_boiler", "y": 180 },
+    "facing=west":  { "model": "astralgenerators:block/solid_boiler", "y": 270 },
+    "facing=east":  { "model": "astralgenerators:block/solid_boiler", "y": 90 }
+  }
+}
