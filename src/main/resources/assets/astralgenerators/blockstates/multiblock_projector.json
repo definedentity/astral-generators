@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "astralgenerators:block/multiblock_projector" },
+    "facing=south": { "model": "astralgenerators:block/multiblock_projector", "y": 180 },
+    "facing=west":  { "model": "astralgenerators:block/multiblock_projector", "y": 270 },
+    "facing=east":  { "model": "astralgenerators:block/multiblock_projector", "y": 90 }
+  }
+}

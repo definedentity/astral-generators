@@ -57,30 +57,30 @@
   "components": [
     {
       "type": "custommachinery:fluid",
-      "capacity": "100000000",
+      "capacity": "81000000",
       "id": "fuel",
       "mode": "input",
-      "maxInput": "100000000",
+      "maxInput": "81000000",
       "maxOutput": "0",
       "filter": ["minecraft:water"]
     },
     {
       "type": "custommachinery:fluid",
-      "capacity": "100000000",
+      "capacity": "81000000",
       "id": "water",
       "mode": "input",
-      "maxInput": "100000000",
+      "maxInput": "81000000",
       "maxOutput": "0",
       "whitelist": true,
       "filter": ["minecraft:water"]
     },
     {
       "type": "custommachinery:fluid",
-      "capacity": "100000000",
+      "capacity": "81000000",
       "id": "output",
       "mode": "output",
       "maxInput": "0",
-      "maxOutput": "10000000000"
+      "maxOutput": "81000000"
     }
   ]
 }

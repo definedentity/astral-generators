@@ -80,8 +80,8 @@
     },
     {
       "type": "custommachinery:fluid",
-      "capacity": "100000000",
-      "maxInput": "100000000",
+      "capacity": "81000000",
+      "maxInput": "81000000",
       "maxOutput": "0",
       "id": "coolingtank"
     }

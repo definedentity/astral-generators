@@ -1,9 +1,11 @@
 {
-  "name": "Steam Generator Controller",
+  "name": "Steam Turbine",
   "appearance": {
-    "block": "astralgenerators:steam_generator_controller",
+    "active": "false",
+    "block": "astralgenerators:steam_turbine",
     "running": {
-      "lightlevel": 15
+      "lightlevel": 15,
+      "active": "true"
     }
   },
   "gui": [
@@ -50,17 +52,17 @@
   "components": [
     {
       "type": "custommachinery:fluid",
-      "capacity": "100000000",
+      "capacity": "81000000",
       "id": "steam",
       "mode": "input",
-      "maxInput": "100000000",
+      "maxInput": "81000000",
       "maxOutput": "0",
       "whitelist": true,
       "filter": ["#c:steam"]
     },
     {
       "type": "custommachinery:energy",
-      "capacity": "1000000000000",
+      "capacity": "1000000000",
       "maxInput": "0",
       "maxOutput": "1000000000000",
       "id": "energy",

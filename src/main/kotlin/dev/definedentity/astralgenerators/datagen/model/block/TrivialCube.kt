@@ -19,7 +19,6 @@ class TrivialCube(blockStateModelGenerator: BlockModelGenerators) {
                 BlockRegistry.VENT,
                 BlockRegistry.EXHAUST_VENT,
                 BlockRegistry.STAINLESS_STEEL_CASING,
-                BlockRegistry.MULTIBLOK_PROJECTOR
             )
 
         blocks.forEach { blockStateModelGenerator.createTrivialCube(it) }

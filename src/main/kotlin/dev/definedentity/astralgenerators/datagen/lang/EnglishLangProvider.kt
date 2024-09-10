@@ -2,6 +2,8 @@ package dev.definedentity.astralgenerators.datagen.lang
 
 import dev.definedentity.astralgenerators.AstralGenerators
 import dev.definedentity.astralgenerators.block.*
+import dev.definedentity.astralgenerators.block.EngineIntakeCasing
+import dev.definedentity.astralgenerators.block.machines.SteamTurbine
 import dev.definedentity.astralgenerators.block.multiblock_projector.MultiBlockProjector
 import dev.definedentity.astralgenerators.item.DeuteriumBucket
 import dev.definedentity.astralgenerators.item.Helium3Bucket
@@ -53,6 +55,7 @@ class EnglishLangProvider(fabricDataGenerator: FabricDataGenerator) :
         items[ItemRegistry.TRITIUM_BUCKET] = TritiumBucket.NAME
         items[ItemRegistry.STEAM_BUCKET] = SteamBucket.NAME
         items[BlockRegistry.MULTIBLOK_PROJECTOR.asItem()] = MultiBlockProjector.NAME
+        items[BlockRegistry.STEAM_TURBINE.asItem()] = SteamTurbine.NAME
 
         items.forEach { (k, v) -> translationBuilder.add(k, v) }
     }
@@ -76,6 +79,7 @@ class EnglishLangProvider(fabricDataGenerator: FabricDataGenerator) :
         tooltips[TritiumBucket.ID] = TritiumBucket.TOOLTIP_CONTENT
         tooltips[SteamBucket.ID] = SteamBucket.TOOLTIP_CONTENT
         tooltips[MultiBlockProjector.ID] = MultiBlockProjector.TOOLTIP_CONTENT
+        tooltips[SteamTurbine.ID] = SteamTurbine.TOOLTIP_CONTENT
 
         tooltips.forEach { (k, v) -> translationBuilder.add("tooltip.${k}", v) }
     }

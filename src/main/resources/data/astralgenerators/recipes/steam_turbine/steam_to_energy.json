@@ -1,6 +1,6 @@
 {
   "type": "custommachinery:custom_machine",
-  "machine": "astralgenerators:steam_generator",
+  "machine": "astralgenerators:steam_turbine",
   "time": 10,
   "requirements": [
     {
@@ -11,7 +11,7 @@
     },
     {
       "type": "custommachinery:energy",
-      "amount": 10000,
+      "amount": 168000,
       "mode": "output"
     },{
       "type": "custommachinery:structure",

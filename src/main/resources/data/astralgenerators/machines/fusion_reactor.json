@@ -63,27 +63,27 @@
   "components": [
     {
       "type": "custommachinery:fluid",
-      "capacity": "100000000",
+      "capacity": "81000000",
       "id": "input1",
       "mode": "input",
-      "maxInput": "100000000",
+      "maxInput": "81000000",
       "maxOutput": "0"
     },
     {
       "type": "custommachinery:fluid",
-      "capacity": "100000000",
+      "capacity": "81000000",
       "id": "input2",
       "mode": "input",
-      "maxInput": "100000000",
+      "maxInput": "81000000",
       "maxOutput": "0"
     },
     {
       "type": "custommachinery:fluid",
-      "capacity": 10000000000,
+      "capacity": 81000000,
       "id": "output",
       "mode": "output",
       "maxInput": "0",
-      "maxOutput": "10000000000"
+      "maxOutput": "81000000"
     },
     {
       "type": "custommachinery:energy",

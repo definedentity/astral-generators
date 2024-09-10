@@ -2,6 +2,8 @@ package dev.definedentity.astralgenerators.registry
 
 import dev.definedentity.astralgenerators.AstralGenerators
 import dev.definedentity.astralgenerators.block.*
+import dev.definedentity.astralgenerators.block.EngineIntakeCasing
+import dev.definedentity.astralgenerators.block.machines.SteamTurbine
 import dev.definedentity.astralgenerators.block.multiblock_projector.MultiBlockProjector
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.core.Registry
@@ -24,6 +26,8 @@ class BlockRegistry {
         val STAINLESS_STEEL_CASING = register("stainless_steel_casing", StainlessSteelCasing())
 
         val MULTIBLOK_PROJECTOR = register("multiblock_projector", MultiBlockProjector())
+
+        val STEAM_TURBINE = register(SteamTurbine.ID, SteamTurbine())
 
         private fun register(name: String, block: Block): Block {
             registerBlockItem(name, block)

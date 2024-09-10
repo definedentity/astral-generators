@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "techreborn:block/machines/generators/generator_top",
+    "bottom": "techreborn:block/machines/generators/generator_bottom",
+    "side": "techreborn:block/machines/generators/generator_side",
+    "front": "astralgenerators:block/steam_turbine_off"
+  }
+}
