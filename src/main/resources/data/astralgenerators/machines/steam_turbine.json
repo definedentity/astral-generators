@@ -1,11 +1,10 @@
 {
   "name": "Steam Turbine",
   "appearance": {
-    "active": "false",
     "block": "astralgenerators:steam_turbine",
     "running": {
-      "lightlevel": 15,
-      "active": "true"
+      "block": "astralgenerators:steam_turbine[active=true]",
+      "lightlevel": 15
     }
   },
   "gui": [
