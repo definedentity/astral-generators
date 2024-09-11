@@ -7,6 +7,9 @@ import dev.definedentity.astralgenerators.block.machines.FluidBoiler
 import dev.definedentity.astralgenerators.block.machines.SolidBoiler
 import dev.definedentity.astralgenerators.block.machines.SteamTurbine
 import dev.definedentity.astralgenerators.block.multiblock_projector.MultiBlockProjector
+import dev.definedentity.astralgenerators.block.turbine.turbine_rotor.TurbineRotor
+import dev.definedentity.astralgenerators.item.turbine_rotor_blade.TurbineRotorBlade
+import dev.definedentity.astralgenerators.block.turbine.turbine_rotor_shaft.TurbineRotorShaft
 import dev.definedentity.astralgenerators.item.DeuteriumBucket
 import dev.definedentity.astralgenerators.item.Helium3Bucket
 import dev.definedentity.astralgenerators.item.SteamBucket
@@ -60,6 +63,9 @@ class EnglishLangProvider(fabricDataGenerator: FabricDataGenerator) :
         items[BlockRegistry.STEAM_TURBINE.asItem()] = SteamTurbine.NAME
         items[BlockRegistry.SOLID_BOILER.asItem()] = SolidBoiler.NAME
         items[BlockRegistry.FLUID_BOILER.asItem()] = FluidBoiler.NAME
+        items[BlockRegistry.TURBINE_ROTOR.asItem()] = TurbineRotor.NAME
+        items[BlockRegistry.TURBINE_ROTOR_SHAFT.asItem()] = TurbineRotorShaft.NAME
+        items[ItemRegistry.TURBINE_ROTOR_BLADE] = TurbineRotorBlade.NAME
 
         items.forEach { (k, v) -> translationBuilder.add(k, v) }
     }
@@ -86,6 +92,9 @@ class EnglishLangProvider(fabricDataGenerator: FabricDataGenerator) :
         tooltips[SteamTurbine.ID] = SteamTurbine.TOOLTIP_CONTENT
         tooltips[SolidBoiler.ID] = SolidBoiler.TOOLTIP_CONTENT
         tooltips[FluidBoiler.ID] = FluidBoiler.TOOLTIP_CONTENT
+        tooltips[TurbineRotor.ID] = TurbineRotor.TOOLTIP_CONTENT
+        tooltips[TurbineRotorShaft.ID] = TurbineRotorShaft.TOOLTIP_CONTENT
+        tooltips[TurbineRotorBlade.ID] = TurbineRotorBlade.TOOLTIP_CONTENT
 
         tooltips.forEach { (k, v) -> translationBuilder.add("tooltip.${k}", v) }
     }

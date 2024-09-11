@@ -4,7 +4,7 @@ import dev.definedentity.astralgenerators.registry.BlockRegistry
 import net.minecraft.data.models.BlockModelGenerators
 import net.minecraft.world.level.block.Block
 
-class TrivialCube(blockStateModelGenerator: BlockModelGenerators) {
+class TrivialCubes(blockStateModelGenerator: BlockModelGenerators) {
     init {
         val blocks =
             listOf<Block>(

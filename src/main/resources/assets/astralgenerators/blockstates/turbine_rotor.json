@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "astralgenerators:block/turbine_rotor_vertical",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "astralgenerators:block/turbine_rotor",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "astralgenerators:block/turbine_rotor"
+    },
+    "facing=south": {
+      "model": "astralgenerators:block/turbine_rotor",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "astralgenerators:block/turbine_rotor_vertical"
+    },
+    "facing=west": {
+      "model": "astralgenerators:block/turbine_rotor",
+      "y": 270
+    }
+  }
+}

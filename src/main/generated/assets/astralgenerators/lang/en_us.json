@@ -13,11 +13,14 @@
   "block.astralgenerators.steel_frame": "Steel Frame",
   "block.astralgenerators.structural_glass": "Structural Glass",
   "block.astralgenerators.superconducting_coil": "Superconducting Coil",
+  "block.astralgenerators.turbine_rotor": "Turbine Rotor",
+  "block.astralgenerators.turbine_rotor_shaft": "Turbine Rotor Shaft",
   "block.astralgenerators.vent": "Vent",
   "item.astralgenerators.deuterium_bucket": "Deuterium Bucket",
   "item.astralgenerators.helium3_bucket": "Helium3 Bucket",
   "item.astralgenerators.steam_bucket": "Steam Bucket",
   "item.astralgenerators.tritium_bucket": "Tritium Bucket",
+  "item.astralgenerators.turbine_rotor_blade": "Turbine Rotor Blade",
   "itemGroup.astralgenerators.astral_generators": "Astral Generators",
   "multiblock_projector.disable": "Multiblock Projector disabled",
   "multiblock_projector.enable": "Multiblock Projector enabled",
@@ -39,5 +42,8 @@
   "tooltip.structural_glass": "A glass block which is used for building most multiblocks.",
   "tooltip.superconducting_coil": "A superconducting coil.",
   "tooltip.tritium_bucket": "Tritium is a rare and radioactive isotope of hydrogen",
+  "tooltip.turbine_rotor": "An important component of the turbine",
+  "tooltip.turbine_rotor_blade": "A blade for the turbine rotor",
+  "tooltip.turbine_rotor_shaft": "A shaft for the turbine rotor",
   "tooltip.vent": "A vent."
 }

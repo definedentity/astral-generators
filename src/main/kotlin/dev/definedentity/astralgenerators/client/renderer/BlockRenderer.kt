@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.RenderType
 class BlockRenderer {
     init {
         renderTranslucentBlock()
+        renderCutoutBlock()
     }
 
     private fun renderTranslucentBlock() {
@@ -22,5 +23,14 @@ class BlockRenderer {
             )
 
         block.forEach { BlockRenderLayerMap.INSTANCE.putBlock(it, RenderType.translucent()) }
+    }
+
+    private fun renderCutoutBlock() {
+        val block =
+            listOf(
+                BlockRegistry.TURBINE_ROTOR_SHAFT
+            )
+
+        block.forEach { BlockRenderLayerMap.INSTANCE.putBlock(it, RenderType.cutout()) }
     }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "astralgenerators:block/turbine_rotor_top",
+    "top": "techreborn:block/machines/tier1_machines/machine_top",
+    "side": "techreborn:block/machines/tier1_machines/machine_side"
+  }
+}

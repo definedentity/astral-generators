@@ -2,6 +2,7 @@ package dev.definedentity.astralgenerators.registry
 
 import dev.definedentity.astralgenerators.AstralGenerators
 import dev.definedentity.astralgenerators.item.*
+import dev.definedentity.astralgenerators.item.turbine_rotor_blade.TurbineRotorBlade
 import net.minecraft.core.Registry
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.Item
@@ -13,6 +14,8 @@ class ItemRegistry {
         val TRITIUM_BUCKET = register("tritium_bucket", TritiumBucket())
         val DEUTERIUM_BUCKET = register("deuterium_bucket", DeuteriumBucket())
         val HELIUM3_BUCKET = register("helium3_bucket", Helium3Bucket())
+
+        val TURBINE_ROTOR_BLADE = register(TurbineRotorBlade.ID, TurbineRotorBlade())
 
         private fun register(name: String, item: Item): Item {
             return Registry.register(

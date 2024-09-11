@@ -7,6 +7,9 @@ import dev.definedentity.astralgenerators.block.machines.FluidBoiler
 import dev.definedentity.astralgenerators.block.machines.SolidBoiler
 import dev.definedentity.astralgenerators.block.machines.SteamTurbine
 import dev.definedentity.astralgenerators.block.multiblock_projector.MultiBlockProjector
+import dev.definedentity.astralgenerators.block.turbine.turbine_rotor.TurbineRotor
+import dev.definedentity.astralgenerators.item.turbine_rotor_blade.TurbineRotorBlade
+import dev.definedentity.astralgenerators.block.turbine.turbine_rotor_shaft.TurbineRotorShaft
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.core.Registry
 import net.minecraft.resources.ResourceLocation
@@ -31,6 +34,8 @@ class BlockRegistry {
         val STEAM_TURBINE = register(SteamTurbine.ID, SteamTurbine())
         val SOLID_BOILER = register(SolidBoiler.ID, SolidBoiler())
         val FLUID_BOILER = register(FluidBoiler.ID, FluidBoiler())
+        val TURBINE_ROTOR = register(TurbineRotor.ID, TurbineRotor())
+        val TURBINE_ROTOR_SHAFT = register(TurbineRotorShaft.ID, TurbineRotorShaft())
 
         private fun register(name: String, block: Block): Block {
             registerBlockItem(name, block)
