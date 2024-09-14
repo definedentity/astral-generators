@@ -15,7 +15,7 @@
       "block": "astralgenerators:fusion_coil"
     },
     "m": {
-      "block": "astralgenerators:conducting_coil"
+      "block": "custommachinery:custom_machine_block"
     }
   },
   "pattern": [

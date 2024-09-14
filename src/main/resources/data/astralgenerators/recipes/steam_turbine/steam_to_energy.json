@@ -22,82 +22,22 @@
       },
       "pattern": [
         [
-          "aaaaaaa",
-          "aaaaaaa",
-          "aaaaaaa",
-          "aaaaaaa",
-          "aaaaaaa",
-          "aaaaaaa",
-          "aaamaaa"
+          " aaa",
+          "maaa",
+          " aaa",
+          " aaa"
         ],
         [
-          "abbbbba",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "abbbbba"
+          " aaa",
+          "bbba",
+          " aba",
+          " aaa"
         ],
         [
-          "abbbbba",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "abbbbba"
-        ],
-        [
-          "abbbbba",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "abbbbba"
-        ],
-        [
-          "abbbbba",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "abbbbba"
-        ],  [
-          "abbbbba",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "abbbbba"
-        ],  [
-          "abbbbba",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "abbbbba"
-        ],  [
-          "abbbbba",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "b     b",
-          "abbbbba"
-        ],
-        [
-          "aaaaaaa",
-          "accccca",
-          "accccca",
-          "accccca",
-          "accccca",
-          "accccca",
-          "aaaaaaa"
+          " aaa",
+          " aca",
+          " aca",
+          " aaa"
         ]
       ]
     }

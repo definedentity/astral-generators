@@ -17,7 +17,7 @@ class BlockRegistry {
     companion object {
         val FUSION_CASING = register("fusion_casing", FusionCasing())
         val FUSION_GLASS = register("fusion_glass", FusionGlass())
-        val STRUCTURAL_GLASS = register("structural_glass", StructuralGlass())
+        //val STRUCTURAL_GLASS = register("structural_glass", StructuralGlass()) 2.0.0 update
         val FUSION_COIL = register("fusion_coil", FusionCoil())
         val ENGINE_INTAKE_CASING = register("engine_intake_casing", EngineIntakeCasing())
         val PIPE_CASING = register("pipe_casing", PipeCasing())

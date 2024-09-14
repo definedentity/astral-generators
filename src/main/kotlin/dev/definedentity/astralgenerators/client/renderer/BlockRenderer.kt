@@ -17,8 +17,8 @@ class BlockRenderer {
             listOf(
                 BlockRegistry.FUSION_GLASS,
                 BlockRegistry.STEEL_FRAME,
-                BlockRegistry.VENT,
-                BlockRegistry.STRUCTURAL_GLASS
+                BlockRegistry.VENT
+                // BlockRegistry.STRUCTURAL_GLASS
             )
 
         block.forEach { BlockRenderLayerMap.INSTANCE.putBlock(it, RenderType.translucent()) }

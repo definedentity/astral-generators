@@ -2,100 +2,40 @@
   "origin": {
     "x": -2,
     "y": 0,
-    "z": 3
+    "z": 1
   },
   "keys": {
     "a": {
       "block": "techreborn:basic_machine_frame"
     },
     "b": {
-      "block": "astralgenerators:structural_glass"
+      "block": "astralgenerators:pipe_casing"
     },
     "c": {
       "block": "astralgenerators:exhaust_vent"
     },
     "m": {
-      "block": "minecraft:air"
+      "block": "custommachinery:custom_machine_block"
     }
   },
   "pattern": [
     [
-      "aaaaaaa",
-      "aaaaaaa",
-      "aaaaaaa",
-      "maaaaaa",
-      "aaaaaaa",
-      "aaaaaaa",
-      "aaaaaaa"
+      " aaa",
+      "maaa",
+      " aaa",
+      " aaa"
     ],
     [
-      "abbbbba",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "abbbbba"
+      " aaa",
+      "bbba",
+      " aba",
+      " aaa"
     ],
     [
-      "abbbbba",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "abbbbba"
-    ],
-    [
-      "abbbbba",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "abbbbba"
-    ],
-    [
-      "abbbbba",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "abbbbba"
-    ],  [
-      "abbbbba",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "abbbbba"
-    ],  [
-      "abbbbba",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "abbbbba"
-    ],  [
-      "abbbbba",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "b     b",
-      "abbbbba"
-    ],
-    [
-      "aaaaaaa",
-      "accccca",
-      "accccca",
-      "accccca",
-      "accccca",
-      "accccca",
-      "aaaaaaa"
+      " aaa",
+      " aca",
+      " aca",
+      " aaa"
     ]
   ]
 }

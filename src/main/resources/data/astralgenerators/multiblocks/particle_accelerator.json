@@ -36,7 +36,7 @@
       "block": "astralgenerators:superconducting_coil"
     },
     "m": {
-      "block": "minecraft:redstone_block"
+      "block": "custommachinery:custom_machine_block"
     }
   },
   "pattern": [
