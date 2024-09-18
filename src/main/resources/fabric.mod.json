@@ -45,6 +45,7 @@
 		"fabric-api": "${fabric_version}",
 		"fabric-language-kotlin": "*",
 		"azurelib": "*",
-		"xenon": "*"
+		"xenon": "*",
+		"custommachinery": "*"
 	}
 }
