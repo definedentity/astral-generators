@@ -47,5 +47,8 @@
 		"azurelib": "*",
 		"xenon": "*",
 		"custommachinery": "*"
+	},
+	"suggests": {
+		"ctm-refabricated": "*"
 	}
 }
