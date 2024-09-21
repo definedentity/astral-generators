@@ -1,9 +1,6 @@
 package dev.definedentity.astralgenerators.block.machines
 
 import dev.definedentity.astralgenerators.block.AGBlock
-import dev.definedentity.astralgenerators.block.machines.SteamTurbine.Companion.ACTIVE
-import dev.definedentity.astralgenerators.block.multiblock_projector.MultiBlockProjector
-import net.fabricmc.fabric.api.block.v1.FabricBlock
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
@@ -17,10 +14,10 @@ import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.StateDefinition
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
 
-class FluidBoiler: AGBlock(FabricBlockSettings.copy(Blocks.IRON_BLOCK)) {
+class FluidBoiler : AGBlock(FabricBlockSettings.copy(Blocks.IRON_BLOCK)) {
     companion object {
         val ID = "fluid_boiler"
-        val NAME ="Fluid Boiler Dummy"
+        val NAME = "Fluid Boiler Dummy"
         val TOOLTIP_CONTENT = "A machine that consumes fluids to generate steam"
 
         val FACING = BlockStateProperties.HORIZONTAL_FACING
@@ -38,10 +35,16 @@ class FluidBoiler: AGBlock(FabricBlockSettings.copy(Blocks.IRON_BLOCK)) {
         return state.getValue(FACING)
     }
 
-    override fun setPlacedBy(level: Level, pos: BlockPos, state: BlockState, placer: LivingEntity?, stack: ItemStack) {
+    override fun setPlacedBy(
+        level: Level,
+        pos: BlockPos,
+        state: BlockState,
+        placer: LivingEntity?,
+        stack: ItemStack
+    ) {
         super.setPlacedBy(level, pos, state, placer, stack)
 
-        if(placer !is Player) return
+        if (placer !is Player) return
         setFacing(level, pos, placer.direction.opposite)
     }
 

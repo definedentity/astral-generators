@@ -4,7 +4,6 @@ import com.mojang.blaze3d.vertex.DefaultVertexFormat
 import com.mojang.blaze3d.vertex.PoseStack
 import com.mojang.blaze3d.vertex.VertexConsumer
 import com.mojang.blaze3d.vertex.VertexFormat
-import com.mojang.math.Quaternion
 import definedentity.xenon.render.RenderUtils
 import definedentity.xenon.render.buffer.TransformingVertexConsumer
 import definedentity.xenon.vec.Cuboid6
@@ -59,7 +58,8 @@ class MultiBlockRenderers {
             partialTicks: Float,
             direction: Direction
         ) {
-            val blocks: Map<BlockPos, MultiBlockPart> = structure.getBlocks(getRotationFromDirection(direction))
+            val blocks: Map<BlockPos, MultiBlockPart> =
+                structure.getBlocks(getRotationFromDirection(direction))
             val stateMap: MutableMap<MultiBlockPart?, BlockState> = IdentityHashMap()
             val player: Player? = Minecraft.getInstance().player
 

@@ -43,7 +43,7 @@ class EnglishLangProvider(fabricDataGenerator: FabricDataGenerator) :
 
         items[BlockRegistry.FUSION_CASING.asItem()] = FusionCasing.NAME
         items[BlockRegistry.FUSION_GLASS.asItem()] = FusionGlass.NAME
-        //items[BlockRegistry.STRUCTURAL_GLASS.asItem()] = StructuralGlass.NAME
+        // items[BlockRegistry.STRUCTURAL_GLASS.asItem()] = StructuralGlass.NAME
         items[BlockRegistry.FUSION_COIL.asItem()] = FusionCoil.NAME
         items[BlockRegistry.ENGINE_INTAKE_CASING.asItem()] = EngineIntakeCasing.NAME
         items[BlockRegistry.PIPE_CASING.asItem()] = PipeCasing.NAME

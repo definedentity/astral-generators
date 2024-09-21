@@ -9,10 +9,10 @@ import net.minecraft.world.item.Item
 class ItemRegistry {
     companion object {
 
-        val STEAM_BUCKET = register("steam_bucket", SteamBucket())
-        val TRITIUM_BUCKET = register("tritium_bucket", TritiumBucket())
-        val DEUTERIUM_BUCKET = register("deuterium_bucket", DeuteriumBucket())
-        val HELIUM3_BUCKET = register("helium3_bucket", Helium3Bucket())
+        val STEAM_BUCKET = register(SteamBucket.ID, SteamBucket())
+        val TRITIUM_BUCKET = register(TritiumBucket.ID, TritiumBucket())
+        val DEUTERIUM_BUCKET = register(DeuteriumBucket.ID, DeuteriumBucket())
+        val HELIUM3_BUCKET = register(Helium3Bucket.ID, Helium3Bucket())
 
         private fun register(name: String, item: Item): Item {
             return Registry.register(

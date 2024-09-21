@@ -1,7 +1,5 @@
 package dev.definedentity.astralgenerators.util
 
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents
-
 object TimeKeeper {
 
     private var serverTick: Int = 0

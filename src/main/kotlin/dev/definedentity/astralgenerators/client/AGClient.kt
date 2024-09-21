@@ -10,7 +10,6 @@ import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.api.EnvType
 import net.fabricmc.api.Environment
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents
 
 @Environment(EnvType.CLIENT)
 class AGClient : ClientModInitializer {
@@ -21,6 +20,6 @@ class AGClient : ClientModInitializer {
         BucketRenderer()
         MultiBlockDefinitionPacketHandler()
 
-        ClientTickEvents.END_CLIENT_TICK.register{TimeKeeper.incrementClientTick()}
+        ClientTickEvents.END_CLIENT_TICK.register { TimeKeeper.incrementClientTick() }
     }
 }

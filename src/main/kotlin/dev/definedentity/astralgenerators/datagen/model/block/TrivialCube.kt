@@ -10,7 +10,7 @@ class TrivialCube(blockStateModelGenerator: BlockModelGenerators) {
             listOf<Block>(
                 BlockRegistry.FUSION_CASING,
                 BlockRegistry.FUSION_GLASS,
-                //BlockRegistry.STRUCTURAL_GLASS,
+                // BlockRegistry.STRUCTURAL_GLASS,
                 BlockRegistry.FUSION_COIL,
                 BlockRegistry.ENGINE_INTAKE_CASING,
                 BlockRegistry.PIPE_CASING,

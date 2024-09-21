@@ -33,6 +33,6 @@ class AstralGenerators : ModInitializer {
         BlockRegistry.init()
         ItemRegistry.init()
 
-        ServerTickEvents.END_SERVER_TICK.register{TimeKeeper.incrementServerTick()}
+        ServerTickEvents.END_SERVER_TICK.register { TimeKeeper.incrementServerTick() }
     }
 }

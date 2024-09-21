@@ -38,5 +38,4 @@ class AGFluidTagProvider(dataGenerator: FabricDataGenerator) : FluidTagProvider(
         getOrCreateTagBuilder(TRITIUM_TAG).add(FluidRegistry.TRITIUM_SOURCE)
         getOrCreateTagBuilder(HELIUM3_TAG).add(FluidRegistry.HELIUM3_SOURCE)
     }
-
 }

@@ -27,22 +27,36 @@ class SteamTurbine : AGBlock(FabricBlockSettings.copy(Blocks.IRON_BLOCK)) {
     }
 
     init {
-        registerDefaultState(with(defaultBlockState()) { setValue(MultiBlockProjector.FACING, Direction.NORTH) })
-        registerDefaultState(with(defaultBlockState()) { setValue(MultiBlockProjector.ACTIVE, false) })
+        registerDefaultState(
+            with(defaultBlockState()) { setValue(MultiBlockProjector.FACING, Direction.NORTH) }
+        )
+        registerDefaultState(
+            with(defaultBlockState()) { setValue(MultiBlockProjector.ACTIVE, false) }
+        )
     }
 
     fun setFacing(level: Level, pos: BlockPos, facing: Direction) {
-        level.setBlock(pos, level.getBlockState(pos).setValue(MultiBlockProjector.FACING, facing), 3)
+        level.setBlock(
+            pos,
+            level.getBlockState(pos).setValue(MultiBlockProjector.FACING, facing),
+            3
+        )
     }
 
     fun getFacing(state: BlockState): Direction {
         return state.getValue(MultiBlockProjector.FACING)
     }
 
-    override fun setPlacedBy(level: Level, pos: BlockPos, state: BlockState, placer: LivingEntity?, stack: ItemStack) {
+    override fun setPlacedBy(
+        level: Level,
+        pos: BlockPos,
+        state: BlockState,
+        placer: LivingEntity?,
+        stack: ItemStack
+    ) {
         super.setPlacedBy(level, pos, state, placer, stack)
 
-        if(placer !is Player) return
+        if (placer !is Player) return
         setFacing(level, pos, placer.direction.opposite)
     }
 

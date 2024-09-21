@@ -15,19 +15,19 @@ import net.minecraft.world.level.block.Block
 
 class BlockRegistry {
     companion object {
-        val FUSION_CASING = register("fusion_casing", FusionCasing())
-        val FUSION_GLASS = register("fusion_glass", FusionGlass())
-        //val STRUCTURAL_GLASS = register("structural_glass", StructuralGlass()) 2.0.0 update
-        val FUSION_COIL = register("fusion_coil", FusionCoil())
-        val ENGINE_INTAKE_CASING = register("engine_intake_casing", EngineIntakeCasing())
-        val PIPE_CASING = register("pipe_casing", PipeCasing())
-        val STEEL_FRAME = register("steel_frame", SteelFrame())
-        val SUPERCONDUCTING_COIL = register("superconducting_coil", SuperconductingCoil())
-        val VENT = register("vent", Vent())
-        val EXHAUST_VENT = register("exhaust_vent", ExhaustVent())
-        val STAINLESS_STEEL_CASING = register("stainless_steel_casing", StainlessSteelCasing())
+        val FUSION_CASING = register(FusionCasing.ID, FusionCasing())
+        val FUSION_GLASS = register(FusionGlass.ID, FusionGlass())
+        // val STRUCTURAL_GLASS = register("structural_glass", StructuralGlass()) 2.0.0 update
+        val FUSION_COIL = register(FusionCoil.ID, FusionCoil())
+        val ENGINE_INTAKE_CASING = register(EngineIntakeCasing.ID, EngineIntakeCasing())
+        val PIPE_CASING = register(PipeCasing.ID, PipeCasing())
+        val STEEL_FRAME = register(SteelFrame.ID, SteelFrame())
+        val SUPERCONDUCTING_COIL = register(SuperconductingCoil.ID, SuperconductingCoil())
+        val VENT = register(Vent.ID, Vent())
+        val EXHAUST_VENT = register(ExhaustVent.ID, ExhaustVent())
+        val STAINLESS_STEEL_CASING = register(StainlessSteelCasing.ID, StainlessSteelCasing())
 
-        val MULTIBLOK_PROJECTOR = register("multiblock_projector", MultiBlockProjector())
+        val MULTIBLOK_PROJECTOR = register(MultiBlockProjector.ID, MultiBlockProjector())
         val STEAM_TURBINE = register(SteamTurbine.ID, SteamTurbine())
         val SOLID_BOILER = register(SolidBoiler.ID, SolidBoiler())
         val FLUID_BOILER = register(FluidBoiler.ID, FluidBoiler())

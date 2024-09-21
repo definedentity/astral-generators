@@ -77,10 +77,16 @@ class MultiBlockProjector : AGBaseEntityBlock(FabricBlockSettings.copy(Blocks.IR
         return state.getValue(FACING)
     }
 
-    override fun setPlacedBy(level: Level, pos: BlockPos, state: BlockState, placer: LivingEntity?, stack: ItemStack) {
+    override fun setPlacedBy(
+        level: Level,
+        pos: BlockPos,
+        state: BlockState,
+        placer: LivingEntity?,
+        stack: ItemStack
+    ) {
         super.setPlacedBy(level, pos, state, placer, stack)
 
-        if(placer !is Player) return
+        if (placer !is Player) return
         setFacing(level, pos, placer.direction)
     }
 
