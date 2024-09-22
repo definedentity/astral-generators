@@ -4,6 +4,9 @@
   "time": 10,
   "requirements": [
     {
+      "type": "custommachinery:fuel"
+    },
+    {
       "type": "custommachinery:fluid",
       "mode": "input",
       "fluid": "minecraft:water",
@@ -18,7 +21,7 @@
     {
       "type": "custommachinery:structure",
       "keys": {
-        "a": "techreborn:industrial_machine_casing",
+        "a": "techreborn:basic_machine_frame",
         "b": "astralgenerators:pipe_casing"
       },
       "pattern": [
