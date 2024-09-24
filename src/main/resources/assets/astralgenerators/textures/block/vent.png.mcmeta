@@ -4,7 +4,7 @@
         "type": "CTM",
         "layer": "CUTOUT",
         "textures": [
-            "astralgenerators:block/exhaust_vent_ctm"
+            "astralgenerators:block/vent_ctm"
         ]
     }
 }

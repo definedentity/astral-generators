@@ -12,7 +12,7 @@
       "block": "astralgenerators:pipe_casing"
     },
     "c": {
-      "block": "astralgenerators:exhaust_vent"
+      "block": "astralgenerators:vent"
     },
     "m": {
       "block": "custommachinery:custom_machine_block"

@@ -45,10 +45,11 @@
 		"fabric-api": "${fabric_version}",
 		"fabric-language-kotlin": "*",
 		"azurelib": "*",
-		"xenon": "*",
-		"custommachinery": "*"
+		"xenon": "*"
 	},
 	"suggests": {
-		"ctm-refabricated": "*"
+		"ctm-refabricated": "*",
+		"custommachinery": "*",
+		"techreborn": "*"
 	}
 }
