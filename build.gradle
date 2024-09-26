@@ -53,7 +53,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
 
 	modImplementation "mod.azure.azurelib:azurelib-fabric-${minecraft_version}:${project.azurelib_version}"
-	modImplementation("com.github.definedentity:xenon:${project.xenon_version}")
+	modImplementation "com.github.definedentity:xenon:${project.xenon_version}"
 
 	modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
 	modLocalRuntime("com.terraformersmc:modmenu:${modmenu_version}")
