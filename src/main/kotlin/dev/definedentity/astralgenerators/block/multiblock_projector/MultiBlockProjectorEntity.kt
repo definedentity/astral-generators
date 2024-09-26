@@ -10,4 +10,8 @@ class MultiBlockProjectorEntity(pos: BlockPos, blockState: BlockState) :
         BlockEntityRegistry.MULTIBLOCK_PROJECTOR_ENTITY,
         pos,
         blockState,
-    ) {}
+    ) {
+    companion object {
+        const val ID = "multiblock_projector_entity"
+    }
+}

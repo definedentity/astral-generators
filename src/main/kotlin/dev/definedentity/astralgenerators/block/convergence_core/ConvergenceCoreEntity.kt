@@ -19,6 +19,10 @@ import net.minecraft.world.level.block.state.BlockState
 class ConvergenceCoreEntity(pos: BlockPos, state: BlockState) :
     BlockEntity(BlockEntityRegistry.CONVERGENCE_CORE_ENTITY, pos, state), GeoBlockEntity {
 
+    companion object {
+        const val ID = "convergence_core_entity"
+    }
+
     val cache = AzureLibUtil.createInstanceCache(this)
 
     override fun registerControllers(controllers: AnimatableManager.ControllerRegistrar) {

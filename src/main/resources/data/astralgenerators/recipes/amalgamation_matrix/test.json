@@ -4,6 +4,36 @@
   "time": 10,
   "requirements": [
     {
+      "type": "custommachinery:item",
+      "item": "minecraft:stone",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "minecraft:cobblestone",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "minecraft:iron_ingot",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "minecraft:gold_ingot",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "item": "minecraft:diamond",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:energy",
+      "mode": "input",
+      "amount": 100000
+    },
+    {
       "type": "custommachinery:structure",
       "keys": {
         "a": "techreborn:basic_machine_frame",

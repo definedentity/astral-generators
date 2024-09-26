@@ -55,7 +55,7 @@ class EnglishLangProvider(fabricDataGenerator: FabricDataGenerator) :
         items[ItemRegistry.HELIUM3_BUCKET] = Helium3Bucket.NAME
         items[ItemRegistry.TRITIUM_BUCKET] = TritiumBucket.NAME
         items[ItemRegistry.STEAM_BUCKET] = SteamBucket.NAME
-        items[BlockRegistry.MULTIBLOK_PROJECTOR.asItem()] = MultiBlockProjector.NAME
+        items[BlockRegistry.MULTIBLOCK_PROJECTOR.asItem()] = MultiBlockProjector.NAME
         items[BlockRegistry.STEAM_TURBINE.asItem()] = SteamTurbine.NAME
         items[BlockRegistry.SOLID_BOILER.asItem()] = SolidBoiler.NAME
         items[BlockRegistry.FLUID_BOILER.asItem()] = FluidBoiler.NAME

@@ -25,7 +25,7 @@ class BlockRegistry {
         val SUPERCONDUCTING_COIL = register(SuperconductingCoil.ID, SuperconductingCoil())
         val VENT = register(Vent.ID, Vent())
 
-        val MULTIBLOK_PROJECTOR = register(MultiBlockProjector.ID, MultiBlockProjector())
+        val MULTIBLOCK_PROJECTOR = register(MultiBlockProjector.ID, MultiBlockProjector())
         val CONVERGENCE_CORE = registerBlockOnly(ConvergenceCore.ID, ConvergenceCore())
 
         val STEAM_TURBINE = register(SteamTurbine.ID, SteamTurbine())

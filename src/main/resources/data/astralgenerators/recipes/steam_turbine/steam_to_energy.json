@@ -13,31 +13,32 @@
       "type": "custommachinery:energy",
       "amount": 168000,
       "mode": "output"
-    },{
+    },
+    {
       "type": "custommachinery:structure",
       "keys": {
         "a": "techreborn:basic_machine_frame",
-        "b": "astralgenerators:structural_glass",
+        "b": "astralgenerators:pipe_casing",
         "c": "astralgenerators:vent"
       },
       "pattern": [
         [
-          " aaa",
-          "maaa",
-          " aaa",
-          " aaa"
+          "aaaa",
+          "aaaa",
+          "aaaa",
+          " m  "
         ],
         [
-          " aaa",
-          "bbba",
-          " aba",
-          " aaa"
+          "aaaa",
+          "abba",
+          "abaa",
+          " b  "
         ],
         [
-          " aaa",
-          " aca",
-          " aca",
-          " aaa"
+          "aaaa",
+          "acca",
+          "aaaa",
+          "    "
         ]
       ]
     }

@@ -7,18 +7,18 @@
       "type": "custommachinery:fluid",
       "mode": "input",
       "fluid": "#c:deuterium",
-      "amount": 10000
+      "amount": 100800
     },
     {
       "type": "custommachinery:fluid",
       "mode": "input",
       "fluid": "#c:tritium",
-      "amount": 10000
+      "amount": 100800
     },
     {
       "type": "custommachinery:fluid",
       "fluid": "astralgenerators:helium3",
-      "amount": 1000,
+      "amount": 100800,
       "mode": "output"
     },
     {

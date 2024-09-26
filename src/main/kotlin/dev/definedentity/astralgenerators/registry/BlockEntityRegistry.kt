@@ -12,10 +12,10 @@ class BlockEntityRegistry {
         val MULTIBLOCK_PROJECTOR_ENTITY =
             Registry.register(
                 Registry.BLOCK_ENTITY_TYPE,
-                ResourceLocation(AstralGenerators.MOD_ID, "multiblock_projector_entity"),
+                ResourceLocation(AstralGenerators.MOD_ID, MultiBlockProjectorEntity.ID),
                 FabricBlockEntityTypeBuilder.create(
                         ::MultiBlockProjectorEntity,
-                        BlockRegistry.MULTIBLOK_PROJECTOR
+                        BlockRegistry.MULTIBLOCK_PROJECTOR
                     )
                     .build()
             )
@@ -23,7 +23,7 @@ class BlockEntityRegistry {
         val CONVERGENCE_CORE_ENTITY =
             Registry.register(
                 Registry.BLOCK_ENTITY_TYPE,
-                ResourceLocation(AstralGenerators.MOD_ID, "convergence_core_entity"),
+                ResourceLocation(AstralGenerators.MOD_ID, ConvergenceCoreEntity.ID),
                 FabricBlockEntityTypeBuilder.create(
                         ::ConvergenceCoreEntity,
                         BlockRegistry.CONVERGENCE_CORE
