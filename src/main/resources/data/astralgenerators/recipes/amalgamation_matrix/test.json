@@ -6,27 +6,32 @@
     {
       "type": "custommachinery:item",
       "item": "minecraft:stone",
-      "mode": "input"
+      "mode": "input",
+      "amount":1
     },
     {
       "type": "custommachinery:item",
       "item": "minecraft:cobblestone",
-      "mode": "input"
+      "mode": "input",
+      "amount": 1
     },
     {
       "type": "custommachinery:item",
       "item": "minecraft:iron_ingot",
-      "mode": "input"
+      "mode": "input",
+      "amount": 1
     },
     {
       "type": "custommachinery:item",
       "item": "minecraft:gold_ingot",
-      "mode": "input"
+      "mode": "input",
+      "amount": 1
     },
     {
       "type": "custommachinery:item",
       "item": "minecraft:diamond",
-      "mode": "output"
+      "mode": "output",
+      "amount": 1
     },
     {
       "type": "custommachinery:energy",

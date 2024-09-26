@@ -5,26 +5,26 @@
   "requirements": [
     {
       "type": "custommachinery:item",
-      "item": "create:chromatic_compound",
+      "item": "minecraft:stone",
       "amount": 1,
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
-      "item": "createastral:astral_singularity",
+      "item": "minecraft:emerald",
       "amount": 1,
       "mode": "output"
     },
     {
       "type": "custommachinery:fluid",
       "mode": "input",
-      "fluid": "kubejs:supercooled_water",
-      "amount": 10000
+      "fluid": "minecraft:water",
+      "amount": 100800
     },
     {
       "type": "custommachinery:energy",
       "mode": "input",
-      "amount": 500000000
+      "amount": 10000
     },
     {
       "type": "custommachinery:structure",
