@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "astralgenerators:block/amalgamation_matrix_controller"
+    }
+  }
+}

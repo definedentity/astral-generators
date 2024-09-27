@@ -4,6 +4,7 @@ import dev.definedentity.astralgenerators.AstralGenerators
 import dev.definedentity.astralgenerators.block.*
 import dev.definedentity.astralgenerators.block.EngineIntakeCasing
 import dev.definedentity.astralgenerators.block.convergence_core.ConvergenceCore
+import dev.definedentity.astralgenerators.block.machines.AmalgamationMatrixControllerDummy
 import dev.definedentity.astralgenerators.block.machines.FluidBoiler
 import dev.definedentity.astralgenerators.block.machines.SolidBoiler
 import dev.definedentity.astralgenerators.block.machines.SteamTurbine
@@ -59,6 +60,8 @@ class EnglishLangProvider(fabricDataGenerator: FabricDataGenerator) :
         items[BlockRegistry.STEAM_TURBINE.asItem()] = SteamTurbine.NAME
         items[BlockRegistry.SOLID_BOILER.asItem()] = SolidBoiler.NAME
         items[BlockRegistry.FLUID_BOILER.asItem()] = FluidBoiler.NAME
+        items[BlockRegistry.AMALGAMATION_MATRIX_CONTROLLER.asItem()] =
+            AmalgamationMatrixControllerDummy.NAME
         items[BlockRegistry.CONVERGENCE_CORE.asItem()] = ConvergenceCore.NAME
 
         items.forEach { (k, v) -> translationBuilder.add(k, v) }
@@ -85,6 +88,8 @@ class EnglishLangProvider(fabricDataGenerator: FabricDataGenerator) :
         tooltips[SolidBoiler.ID] = SolidBoiler.TOOLTIP_CONTENT
         tooltips[FluidBoiler.ID] = FluidBoiler.TOOLTIP_CONTENT
         tooltips[ConvergenceCore.ID] = ConvergenceCore.TOOLTIP_CONTENT
+        tooltips[AmalgamationMatrixControllerDummy.ID] =
+            AmalgamationMatrixControllerDummy.TOOLTIP_CONTENT
 
         tooltips.forEach { (k, v) -> translationBuilder.add("tooltip.${k}", v) }
     }

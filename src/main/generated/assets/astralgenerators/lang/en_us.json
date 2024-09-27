@@ -1,4 +1,5 @@
 {
+  "block.astralgenerators.amalgamation_matrix_controller": "Amalgamation Matrix Controller Dummy",
   "block.astralgenerators.convergence_core": "Convergence Core",
   "block.astralgenerators.engine_intake_casing": "Engine Intake Casing",
   "block.astralgenerators.fluid_boiler": "Fluid Boiler Dummy",
@@ -19,6 +20,7 @@
   "itemGroup.astralgenerators.astral_generators": "Astral Generators",
   "multiblock_projector.disable": "Multiblock Projector disabled",
   "multiblock_projector.enable": "Multiblock Projector enabled",
+  "tooltip.amalgamation_matrix_controller": "A machine that merge 4 items into one",
   "tooltip.convergence_core": "Amalgamation Matrix core",
   "tooltip.deuterium_bucket": "Deuterium is a stable isotopes of hydrogen",
   "tooltip.engine_intake_casing": "Air...air...air",
