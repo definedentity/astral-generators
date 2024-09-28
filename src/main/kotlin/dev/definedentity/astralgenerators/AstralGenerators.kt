@@ -6,7 +6,6 @@ import dev.definedentity.astralgenerators.registry.BlockRegistry
 import dev.definedentity.astralgenerators.registry.FluidRegistry
 import dev.definedentity.astralgenerators.registry.ItemRegistry
 import dev.definedentity.astralgenerators.util.TimeKeeper
-import mod.azure.azurelib.AzureLib
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents
@@ -25,8 +24,6 @@ class AstralGenerators : ModInitializer {
     }
 
     override fun onInitialize() {
-        AzureLib.initialize()
-
         MultiBlockManager.init()
         FluidRegistry.init()
         BlockEntityRegistry.init()

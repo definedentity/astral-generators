@@ -17,7 +17,8 @@ class TrivialCube(blockStateModelGenerator: BlockModelGenerators) {
                 BlockRegistry.STEEL_FRAME,
                 BlockRegistry.SUPERCONDUCTING_COIL,
                 BlockRegistry.VENT,
-                BlockRegistry.AMALGAMATION_MATRIX_CONTROLLER
+                BlockRegistry.AMALGAMATION_MATRIX_CONTROLLER,
+                BlockRegistry.CONVERGENCE_CORE
             )
 
         blocks.forEach { blockStateModelGenerator.createTrivialCube(it) }

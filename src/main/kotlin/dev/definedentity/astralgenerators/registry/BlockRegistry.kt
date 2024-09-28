@@ -3,7 +3,7 @@ package dev.definedentity.astralgenerators.registry
 import dev.definedentity.astralgenerators.AstralGenerators
 import dev.definedentity.astralgenerators.block.*
 import dev.definedentity.astralgenerators.block.EngineIntakeCasing
-import dev.definedentity.astralgenerators.block.convergence_core.ConvergenceCore
+import dev.definedentity.astralgenerators.block.ConvergenceCore
 import dev.definedentity.astralgenerators.block.machines.AmalgamationMatrixControllerDummy
 import dev.definedentity.astralgenerators.block.machines.FluidBoiler
 import dev.definedentity.astralgenerators.block.machines.SolidBoiler
@@ -27,7 +27,7 @@ class BlockRegistry {
         val VENT = register(Vent.ID, Vent())
 
         val MULTIBLOCK_PROJECTOR = register(MultiBlockProjector.ID, MultiBlockProjector())
-        val CONVERGENCE_CORE = registerBlockOnly(ConvergenceCore.ID, ConvergenceCore())
+        val CONVERGENCE_CORE = register(ConvergenceCore.ID, ConvergenceCore())
 
         val AMALGAMATION_MATRIX_CONTROLLER =
             register(AmalgamationMatrixControllerDummy.ID, AmalgamationMatrixControllerDummy())

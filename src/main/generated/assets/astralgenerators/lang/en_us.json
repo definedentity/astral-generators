@@ -21,7 +21,7 @@
   "multiblock_projector.disable": "Multiblock Projector disabled",
   "multiblock_projector.enable": "Multiblock Projector enabled",
   "tooltip.amalgamation_matrix_controller": "A machine that merge 4 items into one",
-  "tooltip.convergence_core": "Amalgamation Matrix core",
+  "tooltip.convergence_core": "Amalgamation Matrix Core",
   "tooltip.deuterium_bucket": "Deuterium is a stable isotopes of hydrogen",
   "tooltip.engine_intake_casing": "Air...air...air",
   "tooltip.fluid_boiler": "A machine that consumes fluids to generate steam",

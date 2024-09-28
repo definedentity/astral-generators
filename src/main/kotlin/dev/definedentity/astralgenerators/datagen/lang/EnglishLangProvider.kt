@@ -3,7 +3,7 @@ package dev.definedentity.astralgenerators.datagen.lang
 import dev.definedentity.astralgenerators.AstralGenerators
 import dev.definedentity.astralgenerators.block.*
 import dev.definedentity.astralgenerators.block.EngineIntakeCasing
-import dev.definedentity.astralgenerators.block.convergence_core.ConvergenceCore
+import dev.definedentity.astralgenerators.block.ConvergenceCore
 import dev.definedentity.astralgenerators.block.machines.AmalgamationMatrixControllerDummy
 import dev.definedentity.astralgenerators.block.machines.FluidBoiler
 import dev.definedentity.astralgenerators.block.machines.SolidBoiler
