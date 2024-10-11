@@ -1,0 +1,7 @@
+fabricApi {
+	configureDataGeneration()
+}
+
+loom {
+	accessWidenerPath = file("src/main/resources/astralgenerators.accesswidener")
+}
