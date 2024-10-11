@@ -5,6 +5,7 @@ import dev.definedentity.astralgenerators.block.*
 import dev.definedentity.astralgenerators.block.ConvergenceCore
 import dev.definedentity.astralgenerators.block.EngineIntakeCasing
 import dev.definedentity.astralgenerators.block.machines.AmalgamationMatrixControllerDummy
+import dev.definedentity.astralgenerators.block.machines.Assembler
 import dev.definedentity.astralgenerators.block.machines.FluidBoiler
 import dev.definedentity.astralgenerators.block.machines.SolidBoiler
 import dev.definedentity.astralgenerators.block.machines.SteamTurbine
@@ -34,6 +35,7 @@ class BlockRegistry {
         val STEAM_TURBINE = register(SteamTurbine.ID, SteamTurbine())
         val SOLID_BOILER = register(SolidBoiler.ID, SolidBoiler())
         val FLUID_BOILER = register(FluidBoiler.ID, FluidBoiler())
+        val ASSEMBLER = register(Assembler.ID, Assembler())
 
         private fun register(name: String, block: Block): Block {
             registerSimpleBlockItem(name, block)
