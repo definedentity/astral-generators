@@ -31,9 +31,7 @@ class Assembler : AGBlock(FabricBlockSettings.copy(Blocks.IRON_BLOCK)) {
     }
 
     fun setFacing(level: Level, pos: BlockPos, facing: Direction) {
-        level.setBlock(
-            pos, level.getBlockState(pos).setValue(FACING, facing), 3
-        )
+        level.setBlock(pos, level.getBlockState(pos).setValue(FACING, facing), 3)
     }
 
     fun getFacing(state: BlockState): Direction {
@@ -41,7 +39,11 @@ class Assembler : AGBlock(FabricBlockSettings.copy(Blocks.IRON_BLOCK)) {
     }
 
     override fun setPlacedBy(
-        level: Level, pos: BlockPos, state: BlockState, placer: LivingEntity?, stack: ItemStack
+        level: Level,
+        pos: BlockPos,
+        state: BlockState,
+        placer: LivingEntity?,
+        stack: ItemStack
     ) {
         super.setPlacedBy(level, pos, state, placer, stack)
 
