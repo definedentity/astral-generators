@@ -7,7 +7,7 @@ class FusionCasing : AGBlock(FabricBlockSettings.copy(Blocks.IRON_BLOCK)) {
     companion object {
         const val ID = "fusion_casing"
         const val NAME = "Fusion Casing"
-        const val TOOLTIP_CONTENT = "A main casing for the fusion reactor."
+        const val TOOLTIP_CONTENT = "The main casing for the Fusion Reactor."
     }
 
     override fun getTooltipContent(): String {

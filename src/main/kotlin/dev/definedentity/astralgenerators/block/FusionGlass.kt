@@ -7,7 +7,7 @@ class FusionGlass : AGGlassBlock(FabricBlockSettings.copy(Blocks.GLASS).noOcclus
     companion object {
         const val ID = "fusion_glass"
         const val NAME = "Fusion Glass"
-        const val TOOLTIP_CONTENT = "A glass for the fusion reactor."
+        const val TOOLTIP_CONTENT = "Glass for the Fusion Reactor."
     }
 
     override fun getTooltipContent(): String {
