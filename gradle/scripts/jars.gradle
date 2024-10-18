@@ -1,0 +1,21 @@
+base {
+	archivesName = project.archives_base_name
+}
+
+tasks.register("sourcesJar", Jar) {
+    archiveClassifier = "sources"
+}
+
+afterEvaluate {
+    tasks.withType(org.gradle.jvm.tasks.Jar).configureEach {
+          manifest.attributes([
+                'MixinConfigs': 'astralgenerators.mixins.json',
+                'Specification-Title': project.name,
+                'Specification-Version': mod_version,
+                'Specification-Vendor': 'definedentity',
+                'Implementation-Title': base.archivesName,
+                'Implementation-Version': version,
+                'Implementation-Vendor': 'definedentity',
+        ])
+    }
+}

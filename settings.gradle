@@ -13,4 +13,27 @@ pluginManagement {
 	}
 }
 
+dependencyResolutionManagement {
+	repositories {
+		mavenCentral()
+	}
+
+	versionCatalogs {
+		def shadowVersion = "8.3.3"
+		def spotlessVersion = "6.25.0"
+		def macheteVersion = "1.+"
+
+		libs {
+			  def shadow = version("shadow", shadowVersion)
+            plugin("shadow", "com.gradleup.shadow").versionRef(shadow)
+
+            def spotless = version("spotless", spotlessVersion)
+            plugin("spotless", "com.diffplug.spotless").versionRef(spotless)
+
+			  def machete = version("machete", macheteVersion)
+            plugin("machete", "io.github.p03w.machete").versionRef(machete)
+		}
+	}
+}
+
 rootProject.name = "astral-generators"
