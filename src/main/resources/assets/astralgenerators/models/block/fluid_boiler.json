@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "top": "techreborn:block/machines/tier1_machines/machine_top",
-    "front": "astralgenerators:block/fluid_boiler",
-    "side": "techreborn:block/machines/tier1_machines/machine_side"
-  }
-}

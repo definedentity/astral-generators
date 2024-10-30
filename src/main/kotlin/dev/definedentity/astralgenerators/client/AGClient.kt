@@ -6,6 +6,5 @@ import net.fabricmc.api.Environment
 
 @Environment(EnvType.CLIENT)
 class AGClient : ClientModInitializer {
-    override fun onInitializeClient() {
-    }
+    override fun onInitializeClient() {}
 }
