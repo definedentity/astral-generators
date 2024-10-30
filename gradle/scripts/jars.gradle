@@ -2,14 +2,20 @@ base {
 	archivesName = project.archives_base_name
 }
 
-tasks.register("sourcesJar", Jar) {
-    archiveClassifier = "sources"
+machete {
+    enabled = Boolean.getBoolean("PUBLISHING")
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_${project.base.archivesName.get()}"}
+	}
 }
 
 afterEvaluate {
     tasks.withType(org.gradle.jvm.tasks.Jar).configureEach {
           manifest.attributes([
-                'MixinConfigs': 'astralgenerators.mixins.json',
+                'MixinConfigs': "${base.archivesName}.mixins.json",
                 'Specification-Title': project.name,
                 'Specification-Version': mod_version,
                 'Specification-Vendor': 'definedentity',
