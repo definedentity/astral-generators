@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "astralgenerators:item/material_sets/plate",
+    "layer1": "astralgenerators:item/material_sets/plate_secondary",
+    "layer2": "astralgenerators:item/material_sets/plate_overlay"
+  }
+}

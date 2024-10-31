@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "astralgenerators:item/material_sets/wire_fine",
+    "layer1": "astralgenerators:item/material_sets/wire_fine_secondary",
+    "layer2": "astralgenerators:item/material_sets/wire_fine_overlay"
+  }
+}

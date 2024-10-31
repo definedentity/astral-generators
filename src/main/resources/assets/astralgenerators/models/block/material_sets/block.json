@@ -1,0 +1,7 @@
+{
+  "parent": "astralgenerators:block/cube_2_layer/tinted_both/all_translucent",
+  "textures": {
+    "bot_all": "astralgenerators:block/material_sets/block",
+    "top_all": "astralgenerators:block/material_sets/block_secondary"
+  }
+}

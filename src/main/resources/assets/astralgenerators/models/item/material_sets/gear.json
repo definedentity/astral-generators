@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "astralgenerators:item/material_sets/gear",
+    "layer1": "astralgenerators:item/material_sets/gear_secondary",
+    "layer2": "astralgenerators:item/material_sets/gear_overlay"
+  }
+}
