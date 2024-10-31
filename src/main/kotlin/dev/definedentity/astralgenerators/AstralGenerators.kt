@@ -1,6 +1,7 @@
 package dev.definedentity.astralgenerators
 
 import com.tterrag.registrate.Registrate
+import dev.definedentity.astralgenerators.blocks.AGBlocks
 import dev.definedentity.astralgenerators.items.AGCreativeTabs
 import dev.definedentity.astralgenerators.items.AGItems
 import net.fabricmc.api.ModInitializer
@@ -18,6 +19,7 @@ class AstralGenerators : ModInitializer {
     override fun onInitialize() {
         AGCreativeTabs.register()
         AGItems.register()
+        AGBlocks.register()
         REGISTRATE.register()
     }
 }

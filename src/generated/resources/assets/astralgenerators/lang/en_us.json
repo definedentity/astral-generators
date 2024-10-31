@@ -1,4 +1,8 @@
 {
+  "block.astralgenerators.fusion_casing": "Fusion Casing",
+  "block.astralgenerators.fusion_coil": "Fusion Coil",
+  "block.astralgenerators.fusion_glass": "Fusion Glass",
+  "block.astralgenerators.steel_pipe_casing": "Steel Pipe Casing",
   "item.astralgenerators.jarvis": "J.A.R.V.I.S",
   "item.astralgenerators.multiblock_assembler": "Multiblock Assembler",
   "itemGroup.astralgenerators.general": "Astral Generators"
