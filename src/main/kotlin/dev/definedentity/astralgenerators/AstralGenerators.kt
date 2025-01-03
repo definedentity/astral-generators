@@ -1,35 +1,30 @@
 package dev.definedentity.astralgenerators
 
-import dev.definedentity.astralgenerators.multiblock.MultiBlockManager
-import dev.definedentity.astralgenerators.registry.BlockEntityRegistry
-import dev.definedentity.astralgenerators.registry.BlockRegistry
-import dev.definedentity.astralgenerators.registry.FluidRegistry
-import dev.definedentity.astralgenerators.registry.ItemRegistry
-import dev.definedentity.astralgenerators.util.TimeKeeper
+import com.tterrag.registrate.Registrate
+import dev.definedentity.astralgenerators.utils.AGIdentifier
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents
-import net.minecraft.resources.ResourceLocation
-import org.slf4j.LoggerFactory
+import net.minecraft.world.item.Items
 
-class AstralGenerators : ModInitializer {
-    companion object {
-        val MOD_ID = "astralgenerators"
-        val LOGGER = LoggerFactory.getLogger(MOD_ID)
+object AstralGenerators : ModInitializer {
+    val MOD_ID: String = "astralgenerators"
+    val MOD_NAME: String = "Astral Generators"
 
-        val ITEM_GROUP =
-            FabricItemGroupBuilder.build(ResourceLocation(MOD_ID, "astral_generators")) {
-                BlockRegistry.SUPERCONDUCTING_COIL.asItem().defaultInstance
-            }
+    val REGISTRATE = Registrate.create(MOD_ID)
+
+    val ITEM_GROUP = FabricItemGroupBuilder.build(AGIdentifier("general")) {
+        Items.DIRT.asItem().defaultInstance
     }
 
     override fun onInitialize() {
-        MultiBlockManager.init()
-        FluidRegistry.init()
-        BlockEntityRegistry.init()
-        BlockRegistry.init()
-        ItemRegistry.init()
+        initializeItemGroups()
 
-        ServerTickEvents.END_SERVER_TICK.register { TimeKeeper.incrementServerTick() }
+        REGISTRATE.register()
+    }
+
+    private fun initializeItemGroups() {
+        REGISTRATE.creativeModeTab { ITEM_GROUP }
+
+        REGISTRATE.addRawLang("itemGroup.$MOD_ID.general", MOD_NAME)
     }
 }

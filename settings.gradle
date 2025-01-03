@@ -1,39 +1,47 @@
 pluginManagement {
-	repositories {
-		maven {
-			name = 'Fabric'
-			url = 'https://maven.fabricmc.net/'
-		}
-		mavenCentral()
-		gradlePluginPortal()
-	}
+    repositories {
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
 
-	plugins {
-		id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
-	}
+    plugins {
+        id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+        id 'org.jetbrains.kotlin.jvm' version '2.1.0'
+    }
+}
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
 }
 
 dependencyResolutionManagement {
-	repositories {
-		mavenCentral()
-	}
+    repositories {
+        mavenCentral()
+    }
 
-	versionCatalogs {
-		def shadowVersion = "8.3.3"
-		def spotlessVersion = "6.25.0"
-		def macheteVersion = "1.+"
+    versionCatalogs {
+        def spotlessVersion = "7.0.0.BETA4"
+        def macheteVersion = "1.+"
+        def fabricLoomVersion = "1.9-SNAPSHOT"
+        def kotlinVersion = "2.1.0"
 
-		libs {
-			  def shadow = version("shadow", shadowVersion)
-            plugin("shadow", "com.gradleup.shadow").versionRef(shadow)
+        libs {
+            def fabric = version("fabric", fabricLoomVersion)
+            plugin("fabric", "fabric-loom").versionRef(fabric)
+
+            def kotlin = version("kotlin", kotlinVersion)
+            plugin("kotlin", "org.jetbrains.kotlin.jvm").versionRef(kotlin)
 
             def spotless = version("spotless", spotlessVersion)
             plugin("spotless", "com.diffplug.spotless").versionRef(spotless)
 
-			  def machete = version("machete", macheteVersion)
+            def machete = version("machete", macheteVersion)
             plugin("machete", "io.github.p03w.machete").versionRef(machete)
-		}
-	}
+        }
+    }
 }
 
 rootProject.name = "astral-generators"

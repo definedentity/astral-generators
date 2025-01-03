@@ -1,21 +1,45 @@
 dependencies {
-	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    setup(dependencies)
+    devEnv(dependencies)
+    modDeps(dependencies)
+    recipeViewer(dependencies)
+}
 
-	mappings loom.layered() {
-		officialMojangMappings()
-		parchment("org.parchmentmc.data:parchment-${minecraft_version}:${parchment_version}@zip")
-	}
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
+def recipeViewer(DependencyHandler deps) {
+    deps.modLocalRuntime("me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}")
+}
 
-	modImplementation "com.github.definedentity:xenon:${project.xenon_version}"
+def modDeps(DependencyHandler deps) {
+    deps.modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    deps.modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
+    deps.modImplementation "com.github.definedentity:xenon:${project.xenon_version}"
+    deps.modImplementation "curse.maven:botarium-704113:${project.botarium_version}"
 
-	modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
-	modLocalRuntime("com.terraformersmc:modmenu:${modmenu_version}")
-	modLocalRuntime("me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}")
-	//modLocalRuntime("maven.modrinth:custom-machinery:${minecraft_version}-${custommachinery_version}")
-	modLocalRuntime("maven.modrinth:ctm-refabricated:${ctm_refabricated_version}")
-	modLocalRuntime("me.shedaniel.cloth:cloth-config-fabric:${clothconfig_version}")
-	modLocalRuntime("dev.architectury:architectury-fabric:${architectury_version}")
+    deps.modApi(deps.include("io.github.cottonmc:LibGui:${lib_gui_version}"))
+    deps.modApi(deps.include("io.github.fabricators_of_create:Porting-Lib:$port_lib_version+$minecraft_version"))
+    deps.modApi(deps.include("com.tterrag.registrate_fabric:Registrate:$registrate_version")) {
+        exclude(group: "io.github.fabricators_of_create")
+    }
+    deps.modApi(deps.include("me.alphamode:ForgeTags:$forge_tags_version"))
+    deps.modApi(deps.include("teamreborn:energy:${energy_api}"))
+}
+
+def devEnv(DependencyHandler deps) {
+    deps.modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
+    deps.modLocalRuntime("com.terraformersmc:modmenu:${modmenu_version}")
+    deps.modLocalRuntime("maven.modrinth:ctm-refabricated:${ctm_refabricated_version}")
+    deps.modLocalRuntime("me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}")
+    deps.modLocalRuntime("maven.modrinth:jade:${jade_version}")
+    deps.modLocalRuntime("maven.modrinth:jade-addons-fabric:${jade_addon_version}")
+}
+
+def setup(DependencyHandler deps) {
+    deps.minecraft "com.mojang:minecraft:${project.minecraft_version}"
+
+    deps.mappings loom.layered() {
+        officialMojangMappings()
+        parchment("org.parchmentmc.data:parchment-${minecraft_version}:${parchment_version}@zip")
+    }
+
+    deps.modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 }

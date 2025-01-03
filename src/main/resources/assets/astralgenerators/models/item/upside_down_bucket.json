@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "astralgenerators:item/upside_down_bucket",
-    "layer1": "astralgenerators:item/upside_down_bucket_overlay"
-  }
-}

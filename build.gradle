@@ -1,11 +1,13 @@
-plugins {
-	id 'fabric-loom' version '1.7-SNAPSHOT'
-	id 'maven-publish'
-	id "org.jetbrains.kotlin.jvm" version "2.0.20"
-	id "idea"
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-	alias libs.plugins.machete
-	alias libs.plugins.spotless
+plugins {
+    alias libs.plugins.fabric
+    alias libs.plugins.kotlin
+    alias libs.plugins.spotless
+    alias libs.plugins.machete
+
+    id "maven-publish"
+    id "idea"
 }
 
 String buildNumber = System.getenv("GITHUB_RUN_NUMBER")
@@ -13,8 +15,10 @@ String buildNumber = System.getenv("GITHUB_RUN_NUMBER")
 version = "${mod_version}" + (buildNumber != null ? ".${buildNumber}" : "")
 group = project.maven_group
 
-kotlin {
-	jvmToolchain(17)
+configurations.configureEach {
+    resolutionStrategy {
+        force("net.fabricmc:fabric-loader:${project.loader_version}")
+    }
 }
 
 apply from: "$rootDir/gradle/scripts/moddevgradle.gradle"
@@ -24,19 +28,27 @@ apply from: "$rootDir/gradle/scripts/resources.gradle"
 apply from: "$rootDir/gradle/scripts/jars.gradle"
 apply from: "$rootDir/gradle/scripts/spotless.gradle"
 
-configurations.configureEach {
-	resolutionStrategy {
-		force("net.fabricmc:fabric-loader:${project.loader_version}")
-	}
+// Java
+tasks.withType(JavaCompile).configureEach {
+    options.release = 17
+    options.encoding = "UTF-8"
 }
 
-tasks.withType(JavaCompile) {
-	options.encoding = "UTF-8"
+tasks.withType(KotlinCompile).configureEach {
+    kotlinOptions {
+        jvmTarget = 17
+    }
 }
 
+java {
+    withSourcesJar()
+
+}
+
+// IDEA
 idea {
-	module {
-		downloadSources = true
-		downloadJavadoc = true
-	}
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
 }

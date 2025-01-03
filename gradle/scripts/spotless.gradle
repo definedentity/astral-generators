@@ -1,19 +1,32 @@
 spotless {
-	encoding "UTF-8"
+    encoding "UTF-8"
 
-	kotlin {
-		target 'src/main/kotlin/**/*.kt'
+    kotlin {
+        target "src/*/kotlin/astralgenerators/**/*.kt"
 
-		toggleOffOn()
-		endWithNewline()
-		indentWithTabs()
-		ktfmt().kotlinlangStyle().configure { it.setRemoveUnusedImport(true) }
-	}
+        endWithNewline()
+        indentWithSpaces()
+        toggleOffOn()
 
-	format("dotfiles") {
-		target(".gitignore", ".gitattributes", ".editorconfig")
-		trimTrailingWhitespace()
+        ktfmt().kotlinlangStyle().configure {
+            it.removeUnusedImports = true
+        }
+    }
+
+    json {
+        target 'src/*/resources/**/*.json'
+        targetExclude 'src/generated/resources/**'
+
+        indentWithSpaces(2)
+        endWithNewline()
+
+        biome().downloadDir(new File(rootDir, ".gradle/biome").absolutePath)
+    }
+
+    format("dotfiles") {
+        target(".gitignore", ".gitattributes", ".editorconfig")
+        trimTrailingWhitespace()
         indentWithSpaces(4)
         endWithNewline()
-	}
+    }
 }
